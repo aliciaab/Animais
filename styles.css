@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Playwrite GB S", sans-serif; /* Specify the font family here */
+  background: rgb(255, 236, 206);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 236, 206, 1) 46%,
+    rgba(254, 254, 254, 1) 64%
+  );
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+#ca {
+  font-size: 2.5vw;
+}
+
+button {
+  width: 6vw;
+  height: 2.2vw;
+  margin-top: 3.5vh;
+  border-radius: 1.2vw;
+  background-color: #fec66e;
+}
+
+#tudo {
+  display: flex;
+}
+
+img {
+  width: 37vw;
+  height: 70vh;
+}
+
+#questao {
+  width: 37vw;
+  height: 42vh;
+  margin-top: 5vw;
+  background: #fb9c96;
+  border-radius: 9vw;
+  display: flex; /* Adicione esta linha */
+  flex-direction: column; /* Para alinhar o conteúdo em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto dentro da div */
+  position: relative; /* Necessário para o posicionamento absoluto da mensagem */
+}
+
+h2 {
+  font-size: 1.7vw;
+}
+
+.put {
+  border-radius: 1.2vw;
+  height: 1.5vw;
+  background-color: #fff2d5;
+}
+
+input::placeholder {
+  color: #000000; /* Escolha a cor desejada */
+  opacity: 1; /* Aumenta a opacidade se necessário */
+}
+
+#cachorro {
+  height: 41.7vw;
+  background-color: #fefefe;
+}
+
+#enviar {
+  background-color: #ff006a;
+}
+/* Estilos para a mensagem/banner */
+#mensagem {
+    position: fixed; /* Fica fixo na tela */
+    top: 22vw; /* Posição vertical centralizada */
+    left: 49vw; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza corretamente */
+    background-color: #ff4c4c; /* Fundo vermelho */
+    padding: 2vw; /* Espaçamento interno */
+    border-radius: 1vw; /* Bordas arredondadas */
+    z-index: 100; /* Fica acima de outros elementos */
+    display: none; /* Inicialmente escondido */
+    width: 40vw; /* Largura do banner */
+    height: 22vw;
+    max-width: 400px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animação */
+    opacity: 0; /* Opacidade inicial */
+}
+
+/* Estilo para o texto dentro do banner */
+#mensagem p {
+    font-size: 60vw; /* Tamanho do texto */
+    margin: 0; /* Remove margem padrão */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    display: flex; /* Flexbox para centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Ocupa toda a altura do banner */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+}
+
+/* Animações ao exibir a mensagem */
+.show {
+    display: block; /* Torna visível */
+    opacity: 1; /* Opacidade total */
+    transform: translate(-50%, -50%); /* Mantém a posição */
+}
+
+/* Adicione esta classe para quando a mensagem não deve ser visível */
+.hide {
+    display: none; /* Mantém a mensagem oculta */
+    opacity: 0; /* Opacidade zero */
+}
