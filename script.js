@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const mensagem = document.getElementById("mensagem");
 
         if (pergunta1 === "" || pergunta2 === "") {
-            mensagem.classList.add("show"); // Adiciona a classe para exibir
+            mensagem.classList.add("show"); // Exibe a mensagem
             mensagem.style.display = "block"; // Garante que a mensagem apareça
             setTimeout(() => {
                 mensagem.style.opacity = 1; // Aplica opacidade após mostrar
@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             mensagem.style.opacity = 0; // Reduz a opacidade antes de esconder
             setTimeout(() => {
-                mensagem.classList.remove("show"); // Remove a classe para ocultar
-                mensagem.style.display = "none"; // Esconde completamente
-            }, 500); // Espera pela animação de opacidade
-            alert("Dados enviados com sucesso!"); // Exemplo de ação ao enviar
+                mensagem.classList.remove("show"); // Oculta a mensagem
+                mensagem.style.display = "none";
+            }, 500); // Animação de opacidade
+            alert("Dados enviados com sucesso!"); // Confirmação de envio
         }
     });
 });
